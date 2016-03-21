@@ -1,0 +1,21 @@
+body{
+	position: relative;
+}
+.form span{
+	width: 1.9rem;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	text-align: center;
+	font-size: 0.28rem;
+	color: #fff;
+	border: none;
+	border-radius: 0.06rem;
+	position: absolute;
+	right: 0.28rem;
+	top: 2.4rem;
+	background: #0f91c5;
+	display: block;
+}
+.form button{
+	margin-top: 0.7rem;
+}

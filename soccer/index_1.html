@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/rem.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript">
+//			var myscroll;
+//			var wHeight = $(window).height();
+//			var hHeight = $('header').height();
+//			var fHeigth = $('footer').height();
+//			function loaded(){
+//				setTimeout(function(){
+//					myscorll = new iScroll('wrapper',{
+//						hScroll:true,
+//						hScrollbar:false,
+//						vScrollbar:false
+//					});
+////					$('#scroller').height(wHeight - hHeight - fHeigth - 20);
+//				},100)
+//			}
+//			window.addEventListener('load',loaded,false);
+		//iscroll
+		$(function(){
+			var wHeight = $(window).height();
+			var hHeight = $('header').height();
+			var fHeight = $('footer').height();
+	//		var nHeight = $('.nav').height();
+			var scroll = new iScroll("wrapper",{
+				hScrollbar :false,
+				vScrollbar:false,
+				vScroll:true
+			});
+			$('#wrapper').height(wHeight - hHeight -fHeight - 18);
+			scroll.refresh();
+		})
+		
+		</script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/index_1.css"/>
+	</head>
+	<body>
+		<header id="head">
+			<ul class="tabbox">
+				<a href="index.html"><li>热点</li></a>
+				<li class="active">关注</li>
+				<div class="clb"></div>
+			</ul>
+		</header>
+		<div class="container" id="wrapper">
+			<div class="unitbox" id="scroller">
+				<div class="unit_1">
+					<div class="unithead">
+						<dl>
+							<dt><img src="img/userpic.png" alt="" /></dt>
+							<dd>
+								<p class="userinfo"><span class="username">username</span><span class="goodnum">NUM <i class="iconfont">&#xe641;</i></span></p>
+								<p class="usersign">个人签名</p>
+							</dd>
+							<div class="clb"></div>
+						</dl>
+					</div>
+					<div class="userphoto">
+						<img src="img/userphoto.png" alt=""/>
+					</div>
+					<p class="describe">描述</p>
+				</div>
+				<div class="unit_1">
+					<div class="unithead">
+						<dl>
+							<dt><img src="img/userpic.png" alt="" /></dt>
+							<dd>
+								<p class="userinfo"><span class="username">username</span><span class="goodnum">NUM <i class="iconfont">&#xe641;</i></span></p>
+								<p class="usersign">个人签名</p>
+							</dd>
+							<div class="clb"></div>
+						</dl>
+					</div>
+					<div class="userphoto">
+						<img src="img/userphoto.png" alt="" />
+					</div>
+					<p class="describe">描述</p>
+				</div>
+				<div class="unit_1">
+					<div class="unithead">
+						<dl>
+							<dt><img src="img/userpic.png" alt="" /></dt>
+							<dd>
+								<p class="userinfo"><span class="username">username</span><span class="goodnum">NUM <i class="iconfont">&#xe641;</i></span></p>
+								<p class="usersign">个人签名</p>
+							</dd>
+							<div class="clb"></div>
+						</dl>
+					</div>
+					<div class="userphoto">
+						<img src="img/userphoto.png" alt="" />
+					</div>
+					<p class="describe">描述</p>
+				</div>
+				<div class="clb"></div>
+			</div>
+		</div>
+		<footer id="foot">
+			<img class="cream" src="img/cream.png" alt="" />
+			<div class="bottomleft">
+				<a href="index.html">
+					<dl>
+						<dt><i class="iconfont active">&#xe65c;</i></dt>
+						<dd class="quickseltxt active">首页</dd>
+					</dl>
+				</a>
+				<a href="search.html">
+					<dl>
+						<dt><i class="iconfont">&#xe669;</i></dt>
+						<dd class="quickseltxt">发现</dd>
+					</dl>
+				</a>
+			</div>
+			<div class="bottomright">
+				<a href="user.html">
+					<dl>
+						<dt><i class="iconfont">&#xe674;</i></dt>
+						<dd class="quickseltxt">我的</dd>
+					</dl>
+				</a>
+				<a href="index.html">
+					<dl>
+						<dt><i class="iconfont">&#xe644;</i></dt>
+						<dd class="quickseltxt">退出</dd>
+					</dl>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>

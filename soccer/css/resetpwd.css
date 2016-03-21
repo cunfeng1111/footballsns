@@ -1,0 +1,6 @@
+.form input:first-child{
+	border-bottom: none;
+}
+.form button{
+	margin-top: 35px;
+}

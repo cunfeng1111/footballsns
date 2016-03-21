@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/rem.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/index_1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+		
+	</head>
+	<body>
+		<header>发现</header>
+		<div class="form">
+			<div class="formbox">
+				<input type="text" placeholder="请输入昵称" />
+				<input type="button" name="" id="" value="搜索"/>
+			</div>
+		</div>
+		<div class="container" id="wrapper">
+			<div class="unitbox" id="scorller">
+				<div class="unit">
+					<div class="unithead">
+						<dl>
+							<dt><img src="img/userpic.png" alt="" /></dt>
+							<dd>
+								<p class="userinfo"><span class="username">username</span><span class="goodnum">NUM <i class="iconfont">&#xe641;</i></span></p>
+								<p class="usersign">个人签名</p>
+							</dd>
+							<div class="clb"></div>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="foot">
+			<img class="cream" src="img/cream.png" alt="" />
+			<div class="bottomleft">
+				<a href="index.html">
+					<dl>
+						<dt><i class="iconfont ">&#xe65c;</i></dt>
+						<dd class="quickseltxt ">首页</dd>
+					</dl>
+				</a>
+				<a href="search.html">
+					<dl>
+						<dt><i class="iconfont active">&#xe669;</i></dt>
+						<dd class="quickseltxt active">发现</dd>
+					</dl>
+				</a>
+			</div>
+			<div class="bottomright">
+				<a href="user.html">
+					<dl>
+						<dt><i class="iconfont">&#xe674;</i></dt>
+						<dd class="quickseltxt">我的</dd>
+					</dl>
+				</a>
+				<a href="index.html">
+					<dl>
+						<dt><i class="iconfont">&#xe644;</i></dt>
+						<dd class="quickseltxt">退出</dd>
+					</dl>
+				</a>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			var wHeight = $(window).height();
+			var hHeight = $('header').height();
+			var fHeight = $('footer').height();
+			var scroll = new iScroll("wrapper",{
+				hScrollbar :false,
+				vScrollbar:false,
+				vScroll:true
+			});
+			$('#wrapper').height(wHeight - hHeight -fHeight);
+			scroll.refresh();
+		</script>
+	</body>
+</html>

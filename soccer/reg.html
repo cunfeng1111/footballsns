@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/rem.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/reg.css"/>
+	</head>
+	<body>
+		<header>足球圈子-注册</header>
+		<div class="form">
+			<input type="text" name="" id="uid" placeholder="手机号"/>
+			<input type="password" name="" id="pwd" placeholder="密码"/>
+			<input type="text" name="" id="nickname" placeholder="昵称"/>
+			<button>
+				提 交
+			</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$('button').on('tap',function(e){
+				e.preventDefault();
+				var uid = $('#uid').val();
+				var pwd = $('#pwd').val();
+				var nickname = $('#nickname').val();
+//				var userInfo = window.localStorage;
+//				var timer = null;
+				var reg = /^[1][358][0-9]{9}$/;
+				var reg1 = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/;   //6-22位密码
+				alert(1);
+				if(reg.test(uid)&&reg1.test(pwd)){
+					$.ajax({
+						type:'get',
+						url:"http://localhost:8080/Proxy/FootBall/user/json/reg.do",
+						data:{"loginname":uid,"password":pwd,"nickname":nickname},
+						success: function(data){
+							var data = JSON.parse(data);
+							console.log(data);
+//							alert(data.encode());
+							if(data.encode==500){
+								alert('账号已被注册');
+							}else{
+								console.log('succeed,jumping');
+								window.location.href = "login.html"
+							}
+						}
+					});
+				}
+				else{
+					alert('error');
+				}
+			});
+		})
+	</script>
+</html>

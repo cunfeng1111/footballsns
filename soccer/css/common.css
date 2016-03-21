@@ -1,0 +1,69 @@
+html{
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+body{
+	margin: 0px auto;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+header{
+	width: 100%;
+	height:0.74rem;
+	line-height: 0.74rem;
+	text-align: center;
+	background: #0f91c5;
+	font-size: 0.34rem;
+	color: #fff;
+}
+.form{
+	margin: 0px 0.3rem;
+}
+.form input{
+	margin-top: 0.54rem;
+	width: 100%;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	border-bottom: 0.01rem #7f7f7f solid;
+	font-size: 0.28rem;
+}
+.form input:first-child{
+	margin-top: 0.18rem;
+	width: 100%;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	border-bottom:0.01rem #7f7f7f solid;;
+	font-size: 0.28rem;
+}
+.form .links{
+	width: 100%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+}
+.form .links a{
+	color: #61b7da;
+	text-decoration: underline;
+	font-size: 0.24rem;
+}
+.form .links .reg{
+	float: left;
+}
+.form .links .pwd{
+	float: right;
+}
+.form button{
+	width: 100%;
+	height: 0.76rem;
+	line-height: 0.76rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.34rem;
+	background: #0f91c5;
+	border: none;
+	outline: none;
+	border-radius: 0.06rem;
+}

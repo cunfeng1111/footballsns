@@ -1,0 +1,265 @@
+html{
+	font-size: 100px;
+}
+body{
+	background: #f1f1f1;
+}
+header{
+	width: 100%;
+	height: 0.74rem;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+header .tabbox{
+	width: 2.12rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	top: 50%;
+	margin-top:-0.22rem ;
+	border-radius: 0.2rem;
+	overflow: hidden;
+}
+.tabbox li{
+	width:1.06rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	font-size: 0.24rem;
+	text-align: center;
+	float: left;
+	background: rgba(255,255,255,0.4);
+	color: rgba(255,255,255,0.6);
+}
+.tabbox .active{
+	background: rgba(255,255,255,0.6);
+	color: rgba(255,255,255,1);
+}
+.nav{
+	width: 100%;
+	height: 0.66rem;
+	margin-top: 0.74rem;
+	border-bottom: 0.01rem #d9d9d9 solid;
+	position: relative;
+	background: #fff;
+}
+.nav li{
+	float: left;
+	width: 33.3%;
+	overflow: hidden;
+}
+.nav li a{
+	color: #000;
+	display: block;
+	width: 92.5%;
+	height: 0.62rem;
+	line-height: 0.66rem;
+	text-align: center;
+	font-size: 0.28rem;
+}
+.nav li:nth-child(3) a{
+	float:right ;
+}
+.swiper-pagination{
+	width: 100%;
+	height: 0.66rem;
+	background: #fff;
+	border-bottom: 0px;
+	
+}
+.swiper-pagination-bullet{
+	display: block;
+	width: 33.3%;
+	height:0.62rem;
+	line-height: 0.66rem;
+	border-radius: 0;	
+	float: left;
+	background: #fff;
+	opacity: 1;
+	border-bottom: #fff solid 0.06rem;
+}
+.swiper-pagination-bullet-active{
+	border-bottom:0.06rem solid #0f91c5;
+}
+.swiper-pagination-bullet-active.active{
+	background: #fff;
+	opacity: 1;
+}
+/*.nav li .active{
+	color: #000;
+	display: block;
+	width: 92.5%;
+	height: 0.62rem;
+	line-height: 0.66rem;
+	text-align: center;
+	font-size: 0.28rem;
+	border-bottom:0.06rem  #0f91c5 solid;
+}*/
+/*.swiper-pagination{
+	width: 100%;
+	height: 0.05rem;
+	position: absolute;
+	bottom: 0.01rem;
+}*/
+/*.main1{
+	width: 100%;
+	height: 79.29%;
+	background: #f1f1f1;
+	padding: 0.1rem 0px 0px 0px;
+}*/
+.mainviewport{
+	width: 100%;
+	background: #f1f1f;
+	padding: 0.1rem 0px 0.1rem 0px;
+}
+.mainviewport .tabunit{
+	width: 100%;
+	background: #fff;
+}
+.tabunit dl{
+	margin-bottom: 0.1rem;
+	width: 100%;
+	border: 0.01rem solid #e5e5e5;
+	font-size: 0.28rem;
+}
+.tabunit dl img{
+	width: 100%;
+}
+/*.tabunit dl:nth-child(even){
+	float: right;
+}
+.tabunit dl:nth-child(odd){
+	float: left;
+}*/
+.tabunit dt{
+	border-bottom: 0.01rem #e5e5e5 solid;
+}
+.tabunit dd{
+	padding: 0.15rem 0.13rem 0.15rem 0.2rem;
+}
+/*.tabunit .fl{
+	float: left;
+}*/
+.unit{
+	width: 100%;
+}
+.lunit{
+	width: 48%;
+	float: left;
+}
+.runit{
+	width: 48%;
+	float: right;
+}
+/*.main1 .contain{
+	width: 100%;
+	background: #fff;
+}*/
+/*.contain dl{
+	margin-bottom: 0.1rem;
+	width: 48%;
+	border: 0.01rem solid #e5e5e5;
+	font-size: 0.28rem;
+}*/
+/*.contain dl img{
+	width: 100%;
+}*/
+/*.contain dl:nth-child(even){
+	float: right;
+}
+.contain dl:nth-child(odd){
+	float: left;
+}*/
+/*.contain dt{
+	border-bottom: 0.01rem #e5e5e5 solid;
+}*/
+/*.contain dd{
+	padding: 0.15rem 0.13rem 0.15rem 0.2rem;
+}*/
+/*.contain .fl{
+	float: left;
+}*/
+/*.tabbag{
+	width: 100%;
+}*/
+/*.containtab1{
+	width: 33.3%;
+}
+.containtab2{
+	width: 33.3%;
+}
+.containtab3{
+	width: 33.3%;
+}*/
+footer{
+	padding-top: 0.1rem;
+	width: 100%;
+	height:0.8rem;
+	background: #fff;
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	border-top: 0.02rem #cdcdcd solid;
+	font-size: 0.24rem;
+	z-index: 100;
+}
+.cream{
+	width: 0.86rem;
+	height: 0.86rem;
+	display: block;
+	position: absolute;
+	bottom: 0.1rem;
+	left: 50%;
+	margin-left: -0.43rem;
+}
+footer .bottomleft{
+	float: left;
+	width: 44%;
+}
+footer .bottomright{
+	float: right;
+	width: 44%;
+}
+footer dl{
+	width: 39%;
+	height: 0.78rem;
+	float: left;
+	margin-left: 8.5%;
+}
+footer dt{
+	text-align: center;
+	margin-top: 0.08rem;
+	color: #ccc;
+}
+footer dd{
+	text-align: center;
+	color: #ccc;
+	font-size: 0.24rem;
+}
+footer dt i.iconfont{
+	font-size:0.3rem;
+}
+footer .active{
+	color: #0f91c5;
+}
+
+/*iconfont*/
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+

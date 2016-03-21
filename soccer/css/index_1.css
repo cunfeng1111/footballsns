@@ -1,0 +1,80 @@
+.container{
+	width: 100%;
+	margin-top: 0.74rem;
+	clear: both;
+	background: #f1f1f1;
+}
+.container .unit_1{
+	width: 100%;
+	height: 7.75rem;
+	float: left;
+	margin-top: 0.1rem;
+	background: #fff;
+}
+.container .unit_1 .unithead{
+	width: 100%;
+	height: 1.41rem;
+}
+.unithead dl{
+	width: 100%;
+	height: 1.41rem;
+	overflow: hidden;
+	background: #fff;
+}
+.unithead dl dt{
+	width: 1.37rem;
+	height: 1.41rem;
+	position: relative;
+	float: left;
+}
+.unithead dl dt img {
+	width: 0.95rem;
+	height: 0.95rem;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto auto;
+}
+.unithead dl dd{
+	float: left;
+}
+.unithead dl dd .userinfo{
+	width: 5.03rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	margin-top: 0.21rem;
+}
+.unithead dd .username{
+	float: left;
+	font-size: 0.28rem;
+} 
+.unithead dd .goodnum{
+	float: right;
+	margin-right: 0.25rem;
+	font-size: 0.24rem;
+	color: #e7e7e7;
+}
+.unithead dd .iconfont{
+	font-size: 0.24rem;
+}
+.unithead dl dd .usersign{
+	width: 5.03rem;
+	height: 0.59rem;
+	line-height: 0.59rem;
+	color: #999999;
+	font-size: 0.24rem;
+}
+.userphoto{
+	width: 100%;
+}
+.describe{
+	width: 100%;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	background: #fff;
+	font-size: 0.28rem;
+	text-indent: 0.41rem;
+}
+/*iscroll*/

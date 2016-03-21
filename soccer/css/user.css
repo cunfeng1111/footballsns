@@ -1,0 +1,33 @@
+#wrapper .unithead{
+	border-bottom:0px;
+}
+.tab{
+	width: 33.3%;
+	height: 0.51rem;
+	text-align: center;
+}
+.tab a{
+	width: 33.3%;
+	height: 0.46rem;
+	line-height: 0.51rem;
+	float: left;
+	color: #999;
+}
+.tab{
+	width: 100%;
+	height: 0.5rem;
+	border-bottom: 0.01rem #e5e5e5 solid;
+}
+.tab a.active{
+	color:#0f91c5;
+	border-bottom: 0.05rem #0f91c5 solid;
+}
+.imgbox{
+	width: 100%;
+	height: 76%;
+	clear: both;
+}
+.imgbox img{
+	max-width: 49.2%;
+}
+
